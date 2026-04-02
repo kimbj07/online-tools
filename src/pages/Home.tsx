@@ -71,7 +71,7 @@ export default function Home() {
         </main>
         <footer className="border-t border-gray-200 bg-white">
           <div className="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-            © 2025 온라인 도구 모음. 모든 도구는 무료로 제공됩니다.
+            © 2026 온라인 도구 모음. 모든 도구는 무료로 제공됩니다.
           </div>
         </footer>
       </div>

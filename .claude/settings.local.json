@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:online-tools-lac.vercel.app)",
+      "mcp__claude_ai_Slack__slack_read_thread"
+    ]
+  }
+}
