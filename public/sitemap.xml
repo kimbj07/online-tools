@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://online-tools.tigger.dev/</loc>
+    <loc>https://online-tools-lac.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://online-tools.tigger.dev/character-counter</loc>
+    <loc>https://online-tools-lac.vercel.app/character-counter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://online-tools.tigger.dev/json-formatter</loc>
+    <loc>https://online-tools-lac.vercel.app/json-formatter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://online-tools.tigger.dev/qr-generator</loc>
+    <loc>https://online-tools-lac.vercel.app/qr-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

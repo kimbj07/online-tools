@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://online-tools.tigger.dev/sitemap.xml
+Sitemap: https://online-tools-lac.vercel.app/sitemap.xml
