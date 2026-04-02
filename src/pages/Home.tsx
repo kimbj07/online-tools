@@ -20,6 +20,13 @@ const tools = [
     path: '/qr-generator',
     icon: '📱',
   },
+  {
+    title: '멍사주',
+    description: '우리 강아지의 사주팔자를 알아보세요. AI가 분석하는 반려견 운세!',
+    path: 'https://mengsaju.vercel.app/',
+    icon: '🐶',
+    external: true,
+  },
 ]
 
 export default function Home() {
@@ -37,20 +44,29 @@ export default function Home() {
           </div>
         </header>
         <main className="max-w-4xl mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {tools.map((tool) => (
-              <Link
-                key={tool.path}
-                to={tool.path}
-                className="block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-blue-300 transition-all group"
-              >
-                <div className="text-3xl mb-4">{tool.icon}</div>
-                <h2 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
-                  {tool.title}
-                </h2>
-                <p className="text-sm text-gray-500">{tool.description}</p>
-              </Link>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {tools.map((tool) => {
+              const className = "block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-blue-300 transition-all group"
+              const content = (
+                <>
+                  <div className="text-3xl mb-4">{tool.icon}</div>
+                  <h2 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
+                    {tool.title}
+                    {'external' in tool && <span className="text-xs text-gray-400 ml-2">↗</span>}
+                  </h2>
+                  <p className="text-sm text-gray-500">{tool.description}</p>
+                </>
+              )
+              return 'external' in tool ? (
+                <a key={tool.path} href={tool.path} target="_blank" rel="noopener noreferrer" className={className}>
+                  {content}
+                </a>
+              ) : (
+                <Link key={tool.path} to={tool.path} className={className}>
+                  {content}
+                </Link>
+              )
+            })}
           </div>
         </main>
         <footer className="border-t border-gray-200 bg-white">
