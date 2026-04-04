@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import { Analytics } from '@vercel/analytics/react'
 import Home from './pages/Home'
 import CharacterCounter from './pages/CharacterCounter'
 import JsonFormatter from './pages/JsonFormatter'
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/qr-generator" element={<QrGenerator />} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </HelmetProvider>
   )
 }
