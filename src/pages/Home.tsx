@@ -27,6 +27,13 @@ const tools = [
     icon: '🐶',
     external: true,
   },
+  {
+    title: '금전 운세',
+    description: '오늘의 금전 운세를 확인하세요. AI가 분석하는 재물운과 투자 조언!',
+    path: 'https://financefortune.vercel.app/',
+    icon: '💰',
+    external: true,
+  },
 ]
 
 export default function Home() {
