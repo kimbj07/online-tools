@@ -34,6 +34,27 @@ const tools = [
     icon: '💰',
     external: true,
   },
+  {
+    title: '행운로또',
+    description: '행운의 로또 번호를 자동으로 뽑아드려요. 오늘의 행운 번호를 확인하세요!',
+    path: 'https://lotto-two-delta.vercel.app',
+    icon: '🎱',
+    external: true,
+  },
+  {
+    title: '이름 궁합',
+    description: '두 사람의 한글 이름으로 알아보는 전통 종이접기식 이름 궁합 테스트!',
+    path: 'https://gunghap-three.vercel.app',
+    icon: '💕',
+    external: true,
+  },
+  {
+    title: '테크 블로그',
+    description: 'IT·기술 트렌드와 개발 이야기를 다루는 개인 기술 블로그입니다.',
+    path: 'https://tech-blog-sigma-bay.vercel.app',
+    icon: '📝',
+    external: true,
+  },
 ]
 
 export default function Home() {
